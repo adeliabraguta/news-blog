@@ -1,15 +1,11 @@
 import "./App.css";
-import { lazy } from "react";
-import { Route, Routes } from "react-router";
-
-const HelloWorld = lazy(() => import("./HelloWorld.tsx"));
+import { Suspense } from "react";
+import { useRoutes } from "react-router-dom";
+import { routes } from "./routes/routes.tsx";
 
 function App() {
-	return (
-		<Routes>
-			<Route path={"/"} element={<HelloWorld />} />
-		</Routes>
-	);
+	const routing = useRoutes(routes);
+	return <Suspense fallback={<div>Loading...</div>}>{routing}</Suspense>;
 }
 
 export default App;

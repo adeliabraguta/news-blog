@@ -10,7 +10,7 @@ if (!rootElement) throw new Error("Root element not found");
 
 createRoot(rootElement).render(
 	<StrictMode>
-		<BrowserRouter>
+		<BrowserRouter basename={import.meta.env.VITE_BASE_PATH || "/news-blog"}>
 			<App />
 		</BrowserRouter>
 	</StrictMode>,
