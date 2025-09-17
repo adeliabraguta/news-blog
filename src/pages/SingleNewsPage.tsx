@@ -19,7 +19,7 @@ const SingleNewsPage = () => {
 				src={newsItem?.photo}
 				alt={newsItem?.title}
 				className="w-full h-80 object-cover mb-4"
-				loading="lazy"
+				loading="eager"
 			/>
 			<p className="text-gray-700 text-justify">{newsItem?.longDesc}</p>
 
