@@ -11,12 +11,14 @@ const MainProtectedLayout = () => {
 	}
 
 	return (
-		<div className={"bg-neutral-200 h-dvh"}>
-			<div className="h-dvh bg-amber-50 w-full max-w-6xl px-4 mx-auto flex flex-col justify-between">
+		<div className={"bg-neutral-200 min-h-screen flex flex-col"}>
+			<div className="bg-white w-full max-w-6xl px-4 mx-auto">
 				<HeaderComponent />
-				<main className="py-8">
-					<Outlet />
-				</main>
+			</div>
+			<main className="flex-1 bg-white w-full max-w-6xl px-4 mx-auto">
+				<Outlet />
+			</main>
+			<div className={"bg-white w-full max-w-6xl px-4 mx-auto"}>
 				<FooterComponent />
 			</div>
 		</div>
