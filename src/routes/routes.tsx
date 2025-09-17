@@ -16,7 +16,7 @@ export const routes: RouteObject[] = [
 				element: <NewsPage />,
 			},
 			{
-				path: "/news:id",
+				path: "/news/:id",
 				element: <SingleNewsPage />,
 			},
 		],
