@@ -11,7 +11,7 @@ if (!rootElement) throw new Error("Root element not found");
 
 createRoot(rootElement).render(
 	<StrictMode>
-		<BrowserRouter basename={import.meta.env.VITE_BASE_PATH || "/news-blog/"}>
+		<BrowserRouter basename={"/news-blog/"}>
 			<App />
 			<ToastContainer />
 		</BrowserRouter>
