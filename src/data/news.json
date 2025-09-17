@@ -1,0 +1,16 @@
+{
+	"news": [
+		{
+			"title": "Exciting Tech Conference 2025 Announced",
+			"photo": "https://quixy.com/wp-content/uploads/2021/04/IDC-Directions.jpg",
+			"shortDesc": "A major tech conference will take place this summer, showcasing the latest innovations.",
+			"longDesc": "The Exciting Tech Conference 2025 will gather industry leaders, developers, and innovators from around the world. Attendees will explore emerging technologies, attend workshops, and network with experts in AI, blockchain, and software development. Early bird tickets are now available online."
+		},
+		{
+			"title": "New Electric Vehicle Model Hits the Market",
+			"photo": "https://www.tesla.com/sites/default/files/modelsx-new/social/model-x-social.jpg",
+			"shortDesc": "A revolutionary electric vehicle is now available, promising longer range and faster charging.",
+			"longDesc": "The latest electric vehicle model offers advanced battery technology, enhanced autopilot features, and a sleek design. Consumers can enjoy an extended driving range of up to 400 miles on a single charge, faster acceleration, and improved safety systems. Pre-orders have already begun and deliveries are expected by next quarter."
+		}
+	]
+}
