@@ -12,7 +12,7 @@ const MainProtectedLayout = () => {
 
 	return (
 		<div className={"bg-neutral-200 h-dvh"}>
-			<div className="h-dvh bg-amber-50 w-full max-w-6xl px-4 mx-auto">
+			<div className="h-dvh bg-amber-50 w-full max-w-6xl px-4 mx-auto flex flex-col justify-between">
 				<HeaderComponent />
 				<main className="py-8">
 					<Outlet />
