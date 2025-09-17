@@ -2,17 +2,22 @@ import { lazy } from "react";
 import type { RouteObject } from "react-router-dom";
 
 const NewsPage = lazy(() => import("../pages/NewsPage.tsx"));
-const MainLayout = lazy(() => import("../layouts/MainLayout.tsx"));
+const MainProtectedLayout = lazy(() => import("../layouts/MainProtectedLayout.tsx"));
+const AuthPage = lazy(() => import("../pages/AuthPage.tsx"));
 
 export const routes: RouteObject[] = [
 	{
 		path: "/",
-		element: <MainLayout />,
+		element: <MainProtectedLayout />,
 		children: [
 			{
 				index: true,
 				element: <NewsPage />,
 			},
 		],
+	},
+	{
+		path: "/auth",
+		element: <AuthPage />,
 	},
 ];
