@@ -1,8 +1,7 @@
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
 import { useRoutes } from "react-router-dom";
+import LoadingSpinner from "./components/UI/LoadingSpinner.tsx";
 import { routes } from "./routes/routes.tsx";
-
-const LoadingSpinner = lazy(() => import("./components/UI/LoadingSpinner.tsx"));
 
 function App() {
 	const routing = useRoutes(routes);
