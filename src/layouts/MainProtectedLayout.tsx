@@ -11,13 +11,15 @@ const MainProtectedLayout = () => {
 	}
 
 	return (
-		<>
-			<HeaderComponent />
-			<main>
-				<Outlet />
-			</main>
-			<FooterComponent />
-		</>
+		<div className={"bg-neutral-200 h-dvh"}>
+			<div className="h-dvh bg-amber-50 w-full max-w-6xl px-4 mx-auto">
+				<HeaderComponent />
+				<main className="py-8">
+					<Outlet />
+				</main>
+				<FooterComponent />
+			</div>
+		</div>
 	);
 };
 
